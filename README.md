@@ -1,11 +1,6 @@
-# Very short description of the package
+# Description about magic-sms
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/ahmedrafat/magic-sms.svg?style=flat-square)](https://packagist.org/packages/ahmedrafat/magic-sms)
-[![Build Status](https://img.shields.io/travis/ahmedrafat/magic-sms/master.svg?style=flat-square)](https://travis-ci.org/ahmedrafat/magic-sms)
-[![Quality Score](https://img.shields.io/scrutinizer/g/ahmedrafat/magic-sms.svg?style=flat-square)](https://scrutinizer-ci.com/g/ahmedrafat/magic-sms)
-[![Total Downloads](https://img.shields.io/packagist/dt/ahmedrafat/magic-sms.svg?style=flat-square)](https://packagist.org/packages/ahmedrafat/magic-sms)
-
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
+Magic SMS is a Package for an integration with any sms gatway with [LARAVEL](http://laravel.com).
 
 ## Installation
 
