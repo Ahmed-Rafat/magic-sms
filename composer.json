@@ -1,0 +1,39 @@
+{
+    "name": "ahmedrafat/magic-sms",
+    "description": "Magic SMS is a Package for an integration with any sms gatway",
+    "keywords": [
+        "ahmedrafat",
+        "magic-sms"
+    ],
+    "homepage": "https://github.com/ahmedrafat/magic-sms",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "AhmEd RaFat",
+            "email": "ahmed.rafat147@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "AR\\MagicSms\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AR\\MagicSms\\Providers\\MagicSmsServiceProvider"
+            ],
+            "aliases": {
+                "MagicSms": "AR\\MagicSms\\Facades\\MagicSmsFacade"
+            }
+        }
+    }
+}
