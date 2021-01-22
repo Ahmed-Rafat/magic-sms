@@ -18,13 +18,7 @@ composer require ahmedrafat/magic-sms
 ## Usage
 
 ``` php
-// Usage description here
-```
 
-### Testing
-
-``` bash
-composer test
 ```
 
 ### Changelog
