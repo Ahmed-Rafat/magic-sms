@@ -30,13 +30,9 @@ If you discover any security related issues, please email ahmed.rafat147@gmail.c
 
 ## Credits
 
-- [Ahmed Rafat](https://github.com/ahmedrafat)
+- [Ahmed Rafat](https://github.com/Ahmed-Rafat)
 - [All Contributors](../../contributors)
 
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
-
-## Laravel Package Boilerplate
-
-This package was generated using the [Laravel Package Boilerplate](https://laravelpackageboilerplate.com).
