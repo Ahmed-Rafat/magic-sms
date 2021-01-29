@@ -21,7 +21,7 @@
     },
     "autoload": {
         "psr-4": {
-            "AR\\MagicSms\\": "src"
+            "AR\\MagicSms\\": "src/"
         },
         "files": [
             "src/Helpers/helpers.php"
