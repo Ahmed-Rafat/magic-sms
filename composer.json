@@ -1,6 +1,6 @@
 {
     "name": "ahmedrafat/magic-sms",
-    "description": "Magic SMS is a Package for an integration with any sms gatway",
+    "description": "Magic SMS allows you to send SMS from your Laravel application with any sms gateway.",
     "keywords": [
         "ahmedrafat",
         "magic-sms"
