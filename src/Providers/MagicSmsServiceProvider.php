@@ -2,6 +2,7 @@
 
 namespace AR\MagicSms\Providers;
 
+use AR\MagicSms\MagicSms;
 use Illuminate\Support\ServiceProvider;
 
 class MagicSmsServiceProvider extends ServiceProvider

@@ -24,7 +24,7 @@
             "AR\\MagicSms\\": "src"
         },
         "files": [
-            "src/Helpers/heplers.php"
+            "src/Helpers/helpers.php"
         ]
     },
     "config": {
