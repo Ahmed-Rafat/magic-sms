@@ -37,5 +37,5 @@ $sms = (new MagicSms)->send($destination, $message);
 $sendSms = magicSendSms($destination, $message); //returns true/false
 ```
 
-[ Headers, Request, Response] will be logged in storage/logs/magic-sms
+[ Headers, Request, Response] will be logged in storage/logs/magic-sms\
 note: you can enable/disable log from config file
