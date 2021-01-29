@@ -9,7 +9,7 @@ class SmsLog {
     /**
      * Directory Path
     */
-    const LOG_DIR = 'storage/sms';
+    const LOG_DIR = 'storage/logs/magic-sms';
 
      /**
      * Get Log directory

@@ -11,10 +11,6 @@ class MagicSmsServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        if (file_exists($file = __DIR__.'/../Helpers/helpers.php')) {
-            require $file;
-        }
-
         if ($this->app->runningInConsole()) {
             $this->publishes([
                 __DIR__.'/../config/config.php' => config_path('magic-sms.php'),

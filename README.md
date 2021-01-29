@@ -1,6 +1,8 @@
-# Description about magic-sms
+# Magic Sms
+Magic SMS allows you to send SMS from your Laravel application with any sms gateway.
 
-Magic SMS is a Package for an integration with any sms gatway with [LARAVEL](http://laravel.com).
+## Requirements
+- Laravel `>=5.6`
 
 ## Installation
 
@@ -10,29 +12,30 @@ You can install the package via composer:
 composer require ahmedrafat/magic-sms
 ```
 
+## Publishing files
+Run the following Command to create config ( config/magic-sms.php ) file. You can set your sms details in the config file.
+
+```bash
+php artisan vendor:publish --provider="AR\\MagicSms\\Providers\\MagicSmsServiceProvider"
+```
 ## Usage
 
 ``` php
+//using MagicSMS
+use AR\MagicSms\MagicSms;
+// or using aliase
+use MagicSms;
 
+$sms = (new MagicSms)->send($destination, $message);
+// You can check if send success via $sms->successful()
+// Or can check if send failed via $sms->failed()
+// or get the server response via $sms->getResponse()
 ```
 
-### Changelog
+### Using Helper function
+``` php
+$sendSms = magicSendSms($destination, $message); //returns true/false
+```
 
-Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
-
-## Contributing
-
-Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
-
-### Security
-
-If you discover any security related issues, please email ahmed.rafat147@gmail.com instead of using the issue tracker.
-
-## Credits
-
-- [Ahmed Rafat](https://github.com/Ahmed-Rafat)
-- [All Contributors](../../contributors)
-
-## License
-
-The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+[ Headers, Request, Response] will be logged in storage/logs/magic-sms
+note: you can enable/disable log from config file

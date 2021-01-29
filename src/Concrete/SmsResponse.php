@@ -49,6 +49,16 @@ class SmsResponse implements SmsResponseInterface {
     }
 
     /**
+     * Chceck if Message Send failed 
+     * 
+     * @return bool
+    */
+    public function failed(): bool
+    {
+        return !$this->successful();
+    }
+
+    /**
      * Check response success value when type is Json
      * 
      * @return bool
@@ -90,6 +100,15 @@ class SmsResponse implements SmsResponseInterface {
         $this->logContent .= 'Response is not as a string .. check your response or configration data' . PHP_EOL;
 
         return false;
+    }
+
+    /**
+     * return server Response
+     *
+     * @return mixed
+     */
+    public function getResponse() {
+        return $this->response->getBody();
     }
 
     /**

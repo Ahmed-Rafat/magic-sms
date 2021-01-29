@@ -1,5 +1,7 @@
 <?php
 
+use AR\MagicSms\MagicSms;
+
 if( !function_exists('doted')) {
     /**
      * Return the value of a given key from array
@@ -20,5 +22,21 @@ if( !function_exists('doted')) {
         }
 
         return $array;
+    }
+}
+
+if( !function_exists('magicSendSms')) {
+    /**
+     * Helper function using to send sms message
+     *
+     * @param string $destination
+     * @param string $message
+     * @return SmsResponse
+     */
+    function magicSendSms($destination, $message)
+    {
+        $sms = (new MagicSms)->send($destination, $message);
+
+        return $sms->successful();
     }
 }
