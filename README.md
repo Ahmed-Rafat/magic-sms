@@ -23,8 +23,6 @@ php artisan vendor:publish --provider="AR\\MagicSms\\Providers\\MagicSmsServiceP
 ``` php
 //using MagicSMS
 use AR\MagicSms\MagicSms;
-// or using aliase
-use MagicSms;
 
 $sms = (new MagicSms)->send($destination, $message);
 // You can check if send success via $sms->successful()
